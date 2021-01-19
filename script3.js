@@ -64,9 +64,9 @@ myImage.addEventListener("load", function() {
             this.position1 = Math.floor(this.y);
             this.position2 = Math.floor(this.x);
             this.speed = mappedImage[this.position1][this.position2][0];
-            let movement = (2.5 - this.speed) + this.velocity;
+           // let movement = (2.5 - this.speed + this.velocity);
            // console.log(this.position1 +"    "+this.position2)
-            this.y += (2.5 + this.speed);
+            this.y += (2.5 + this.speed + this.velocity);
             if (this.y >= canvas.height) {
                 this.y = 0;
                 this.x = Math.random() * canvas.width;
