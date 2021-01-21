@@ -80,6 +80,7 @@ myImage.addEventListener("load", function() {
             }
             let movement = (2.5 - this.speed + this.velocity);
             this.angle+= this.speed/20;
+            this.size = this.speed;
             
             this.y += movement + Math.sin(this.angle) * 2;
             this.x += movement + Math.cos(this.angle) * 1;
